@@ -55,7 +55,9 @@ class TopDealsWidget extends GetView<HomeController> {
             scrollDirection: Axis.horizontal,
             children: controller.cars
                 .map((car) => GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Get.toNamed(Routes.bookCar, arguments: car);
+                      },
                       child: CarWidget(
                         car,
                         controller.cars.indexOf(car),

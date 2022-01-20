@@ -24,13 +24,16 @@ class HeaderWidget extends GetView<HomeController> {
         children: [
           _buildScreenHeader(),
           const SizedBox(height: 8.0),
-          _buildCarImages(),
+          CarImagesWidget(images: controller.displayCar!.images!),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                _buildCarName(),
+                CarNameWidget(
+                  model: controller.displayCar!.model,
+                  brand: controller.displayCar!.brand,
+                ),
                 _buildGarage(),
               ],
             ),
@@ -60,87 +63,6 @@ class HeaderWidget extends GetView<HomeController> {
             color: kPrimaryColor,
           ),
         ],
-      ),
-    );
-  }
-
-  Column _buildCarName() {
-    return Column(
-      children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0),
-          child: Text(
-            controller.displayCar!.model,
-            style: const TextStyle(
-              color: Colors.black,
-              fontSize: 36,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ),
-        const SizedBox(height: 2),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0),
-          child: Text(
-            controller.displayCar!.brand,
-            style: const TextStyle(color: Colors.grey, fontSize: 20),
-          ),
-        ),
-      ],
-    );
-  }
-
-  ValueBuilder<int?> _buildCarImages() {
-    return ValueBuilder<int?>(
-      initialValue: 0,
-      builder: (currentImage, updater) => Column(
-        children: [
-          SizedBox(
-            height: 150,
-            child: PageView(
-              physics: const BouncingScrollPhysics(),
-              onPageChanged: updater,
-              children: controller.displayCar!.images!
-                  .map(
-                    (e) => Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 16),
-                        child: Image.asset(
-                          e,
-                          fit: BoxFit.scaleDown,
-                        )),
-                  )
-                  .toList(),
-            ),
-          ),
-          controller.displayCar!.images!.length > 1
-              ? Container(
-                  margin: const EdgeInsets.only(top: 12),
-                  height: 30,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: controller.displayCar!.images!
-                        .map((e) => _buildIndicator(
-                              controller.displayCar!.images!.indexOf(e) ==
-                                  currentImage,
-                            ))
-                        .toList(),
-                  ),
-                )
-              : Container()
-        ],
-      ),
-    );
-  }
-
-  Widget _buildIndicator(bool isActive) {
-    return AnimatedContainer(
-      duration: const Duration(milliseconds: 150),
-      margin: const EdgeInsets.symmetric(horizontal: 6),
-      height: 8,
-      width: isActive ? 20 : 8,
-      decoration: BoxDecoration(
-        color: isActive ? Colors.black : Colors.grey[400],
-        borderRadius: const BorderRadius.all(Radius.circular(12)),
       ),
     );
   }

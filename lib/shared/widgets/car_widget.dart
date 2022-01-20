@@ -45,7 +45,7 @@ class CarWidget extends StatelessWidget {
             height: 115,
             child: Center(
               child: Hero(
-                tag: car.model,
+                tag: car.images![0],
                 child: Image.asset(
                   car.images![0],
                   fit: BoxFit.fitWidth,

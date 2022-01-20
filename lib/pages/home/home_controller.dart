@@ -12,14 +12,4 @@ class HomeController extends GetxController {
     dealers = DealerService().getDealersList();
     displayCar = cars[5];
   }
-
-  @override
-  void onReady() {
-    super.onReady();
-  }
-
-  @override
-  void onClose() {
-    super.onClose();
-  }
 }

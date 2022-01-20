@@ -12,5 +12,15 @@ class AppPages {
       page: () => const MainView(),
       binding: MainBinding(),
     ),
+    GetPage(
+      name: Routes.availableCars,
+      page: () => const AvailableCarsView(),
+      binding: AvailableCarsBinding(),
+    ),
+    GetPage(
+      name: Routes.bookCar,
+      page: () => BookCarView(),
+      binding: BookCarBinding(),
+    ),
   ];
 }

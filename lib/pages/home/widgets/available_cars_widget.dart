@@ -1,5 +1,7 @@
-import 'package:car_rental/core.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import '/./core.dart';
 
 class AvailableCarsWidget extends StatelessWidget {
   const AvailableCarsWidget({
@@ -9,7 +11,9 @@ class AvailableCarsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Get.toNamed(Routes.availableCars);
+      },
       child: Padding(
         padding: const EdgeInsets.only(top: 20, right: 16, left: 16),
         child: Container(
