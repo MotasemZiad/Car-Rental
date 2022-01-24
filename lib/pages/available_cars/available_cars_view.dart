@@ -16,10 +16,13 @@ class AvailableCarsView extends StatelessWidget {
           width: double.infinity,
           child: Column(
             children: [
-              AppBarWidget(
-                'Available Cars (' +
-                    CarService().getCarsList().length.toString() +
-                    ')',
+              Padding(
+                padding: const EdgeInsets.only(top: 8.0),
+                child: AppBarWidget(
+                  title: 'Available Cars (' +
+                      CarService().getCarsList().length.toString() +
+                      ')',
+                ),
               ),
               const SizedBox(height: 18),
               const AvailableCarsGridView(),

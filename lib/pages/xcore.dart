@@ -3,9 +3,22 @@ export 'main_view.dart';
 export 'main_controller.dart';
 export 'main_binding.dart';
 
-// Home Page
+// Tabs
+// Home Tab
 export 'home/home_controller.dart';
 export 'home/home_view.dart';
+
+// Search Tab
+export 'search/search_controller.dart';
+export 'search/search_view.dart';
+
+// Notifications Tab
+export 'notifications/notifications_controller.dart';
+export 'notifications/notifications_view.dart';
+
+// Profile Tab
+export 'profile/profile_controller.dart';
+export 'profile/profile_view.dart';
 
 // Available Car Page
 export 'available_cars/available_cars_view.dart';

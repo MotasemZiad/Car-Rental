@@ -16,6 +16,9 @@ class MainView extends GetView<MainController> {
         physics: const NeverScrollableScrollPhysics(),
         children: const [
           HomeView(),
+          SearchView(),
+          NotificationsView(),
+          ProfileView(),
         ],
       ),
       bottomNavigationBar: ValueBuilder<int?>(
@@ -38,8 +41,6 @@ class MainView extends GetView<MainController> {
             ),
             elevation: 8.0,
             hasInk: true,
-            // backgroundColor: Colors.red,
-            // inkColor: kPrimaryColor,
             items: <BubbleBottomBarItem>[
               BubbleBottomBarItem(
                 icon: const Icon(
@@ -66,7 +67,7 @@ class MainView extends GetView<MainController> {
                   animationType: BadgeAnimationType.scale,
                   animationDuration: const Duration(milliseconds: 200),
                   badgeContent: const Text(
-                    '7',
+                    '8',
                     style: TextStyle(color: Colors.white, fontSize: 12.0),
                   ),
                   child: const Icon(

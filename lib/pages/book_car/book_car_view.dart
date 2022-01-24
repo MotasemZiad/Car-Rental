@@ -82,7 +82,7 @@ class BookCarView extends GetView<BookCarController> {
                           ),
                         ),
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
@@ -246,8 +246,8 @@ class BookCarView extends GetView<BookCarController> {
 
   Widget _buildAppBar() {
     return AppBarWidget(
-      null,
-      [
+      title: null,
+      actions: [
         Container(
           width: 45,
           height: 45,

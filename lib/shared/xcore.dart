@@ -4,3 +4,6 @@ export 'widgets/dealer_widget.dart';
 export 'widgets/app_bar_widget.dart';
 export 'widgets/car_images_widget.dart';
 export 'widgets/car_name_widget.dart';
+export 'widgets/notification_widget.dart';
+export 'widgets/image_profile_widget.dart';
+export 'widgets/custom_list_tile.dart';
