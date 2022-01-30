@@ -1,6 +1,7 @@
-import 'package:car_rental/pages/search/widgets/recent_search.dart';
-import 'package:car_rental/pages/search/widgets/search_app_bar.dart';
 import 'package:flutter/material.dart';
+
+import './widgets/recent_search.dart';
+import './widgets/search_app_bar.dart';
 
 class SearchView extends StatelessWidget {
   const SearchView({Key? key}) : super(key: key);

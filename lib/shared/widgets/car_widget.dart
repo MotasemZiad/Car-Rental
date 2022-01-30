@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../core.dart';
+import '/core.dart';
 
 class CarWidget extends StatelessWidget {
   const CarWidget(this.car, [this.index, Key? key]) : super(key: key);

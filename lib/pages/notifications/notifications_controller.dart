@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-import '../../core.dart';
+import '/core.dart';
 
 class NotificationsController extends GetxController {
   List<Notification> notifications = [];

@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 
-class CarNameWidget extends StatelessWidget {
-  const CarNameWidget({
+class ColumnNameWidget extends StatelessWidget {
+  const ColumnNameWidget({
     Key? key,
-    required this.model,
-    required this.brand,
+    required this.title,
+    required this.subtitle,
   }) : super(key: key);
-
-  final String model;
-  final String brand;
-
+  final String title;
+  final String subtitle;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -18,7 +16,7 @@ class CarNameWidget extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Text(
-            model,
+            title,
             style: const TextStyle(
               color: Colors.black,
               fontSize: 36,
@@ -30,7 +28,7 @@ class CarNameWidget extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Text(
-            brand,
+            subtitle,
             style: const TextStyle(color: Colors.grey, fontSize: 20),
           ),
         ),

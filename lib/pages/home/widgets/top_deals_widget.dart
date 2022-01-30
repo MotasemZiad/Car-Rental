@@ -2,7 +2,7 @@ import 'package:car_rental/shared/widgets/row_text_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../core.dart';
+import '/core.dart';
 
 class TopDealsWidget extends GetView<HomeController> {
   const TopDealsWidget({

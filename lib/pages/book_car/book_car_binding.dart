@@ -1,5 +1,6 @@
-import 'package:car_rental/pages/book_car/book_car_controller.dart';
 import 'package:get/get.dart';
+
+import '/core.dart';
 
 class BookCarBinding extends Bindings {
   @override

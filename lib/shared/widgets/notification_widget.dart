@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-import '../../core.dart';
+import '/core.dart';
 import 'package:flutter/material.dart' hide Notification;
 
 class NotificationWidget extends GetView<NotificationsController> {

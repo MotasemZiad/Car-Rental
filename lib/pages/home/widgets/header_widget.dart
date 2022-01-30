@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '/../../core.dart';
+import '/core.dart';
 
 class HeaderWidget extends GetView<HomeController> {
   const HeaderWidget({
@@ -15,8 +15,8 @@ class HeaderWidget extends GetView<HomeController> {
       decoration: const BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.only(
-          bottomLeft: Radius.circular(30.0),
-          bottomRight: Radius.circular(30.0),
+          bottomLeft: Radius.circular(30),
+          bottomRight: Radius.circular(30),
         ),
       ),
       child: Column(
@@ -29,9 +29,9 @@ class HeaderWidget extends GetView<HomeController> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                CarNameWidget(
-                  model: controller.displayCar!.model,
-                  brand: controller.displayCar!.brand,
+                ColumnNameWidget(
+                  title: controller.displayCar!.model,
+                  subtitle: controller.displayCar!.brand,
                 ),
                 _buildGarage(),
               ],
@@ -42,7 +42,7 @@ class HeaderWidget extends GetView<HomeController> {
     );
   }
 
-  Padding _buildGarage() {
+  Widget _buildGarage() {
     return Padding(
       padding: const EdgeInsets.all(16.0),
       child: Row(
@@ -66,7 +66,7 @@ class HeaderWidget extends GetView<HomeController> {
     );
   }
 
-  Container _buildScreenHeader() {
+  Widget _buildScreenHeader() {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16.0),
       child: Row(

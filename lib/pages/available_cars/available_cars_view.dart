@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'widgets/available_cars_grid_view.dart';
-import 'widgets/filter_bottom_bar.dart';
-import '../../core.dart';
+import './widgets/available_cars_grid_view.dart';
+import './widgets/filter_bottom_bar.dart';
+
+import '/core.dart';
 
 class AvailableCarsView extends StatelessWidget {
   const AvailableCarsView({Key? key}) : super(key: key);

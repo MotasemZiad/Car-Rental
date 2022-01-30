@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:line_icons/line_icons.dart';
 
-import '../../../core.dart';
+import '/core.dart';
 
 class FilterBottomBar extends StatelessWidget {
   const FilterBottomBar({

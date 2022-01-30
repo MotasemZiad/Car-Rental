@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import '../core.dart';
+import '/core.dart';
 
 class MainBinding extends Bindings {
   @override

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import './widgets/specification_widget.dart';
 
-import '../../core.dart';
-import 'widgets/specification_widget.dart';
+import '/core.dart';
 
 class BookCarView extends GetView<BookCarController> {
   BookCarView({Key? key}) : super(key: key);
@@ -168,7 +168,7 @@ class BookCarView extends GetView<BookCarController> {
           children: [
             _buildAppBar(),
             const SizedBox(height: 16),
-            CarNameWidget(model: car.model, brand: car.brand),
+            ColumnNameWidget(title: car.model, subtitle: car.brand),
             const SizedBox(height: 16),
             Expanded(
               child: CarImagesWidget(
