@@ -31,7 +31,7 @@ class SigninView extends GetView<SigninController> {
               ),
               CustomButton(
                 label: 'Sign In',
-                onTap: () => Get.toNamed(Routes.home),
+                onTap: () => Get.offNamed(Routes.home),
               ),
               const SizedBox(
                 height: 10,
@@ -39,7 +39,7 @@ class SigninView extends GetView<SigninController> {
               RowAuthWidget(
                 firstLabel: "Don't have an account?\t",
                 secondLabel: 'Sign up for free',
-                onTap: () => Get.toNamed(Routes.signup),
+                onTap: () => Get.offNamed(Routes.signup),
               ),
             ],
           ),

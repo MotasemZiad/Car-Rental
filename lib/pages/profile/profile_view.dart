@@ -94,7 +94,7 @@ class ProfileView extends GetView<ProfileController> {
                           ),
                         ),
                         GestureDetector(
-                          onTap: () => Get.back(),
+                          onTap: () => Get.offNamed(Routes.signin),
                           child: Container(
                             width: 120,
                             height: 50,
