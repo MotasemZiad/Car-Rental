@@ -84,7 +84,9 @@ class ProfileView extends GetView<ProfileController> {
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(15),
                               border: Border.all(
-                                  color: Colors.grey[300]!, width: 1),
+                                color: Colors.grey[300]!,
+                                width: 1,
+                              ),
                             ),
                             alignment: Alignment.center,
                             child: const Text(

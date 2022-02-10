@@ -33,7 +33,7 @@ class RowAuthWidget extends StatelessWidget {
               style: TextStyle(
                 color: kPrimaryColor,
                 fontSize: 18,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w600,
               ),
             ),
           ),

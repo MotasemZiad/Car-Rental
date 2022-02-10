@@ -78,7 +78,6 @@ class SigninView extends GetView<SigninController> {
                 style: TextStyle(
                   color: kPrimaryColor,
                   fontSize: 18,
-                  fontWeight: FontWeight.bold,
                 ),
               ),
             ),

@@ -49,7 +49,6 @@ class ForgetPasswordView extends GetView<ForgetPasswordController> {
                   'Cancel',
                   style: TextStyle(
                     fontSize: 22,
-                    fontWeight: FontWeight.bold,
                     color: kPrimaryColor,
                   ),
                 ),
