@@ -1,7 +1,8 @@
-import 'package:car_rental/core.dart';
-import 'package:car_rental/pages/auth/widgets/auth_header_widget.dart';
+import '../widgets/auth_header_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '/core.dart';
 
 class SignupView extends GetView<SignupController> {
   const SignupView({Key? key}) : super(key: key);

@@ -28,7 +28,7 @@ class NotificationWidget extends GetView<NotificationsController> {
         decoration: BoxDecoration(
           color: isRead ? Colors.white : kPrimaryColor,
           borderRadius: const BorderRadius.all(
-            Radius.circular(15),
+            Radius.circular(6),
           ),
         ),
         margin: const EdgeInsets.symmetric(horizontal: 12),
