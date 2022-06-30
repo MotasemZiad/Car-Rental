@@ -40,7 +40,7 @@ class CarImagesWidget extends StatelessWidget {
     );
   }
 
-  SizedBox _buildImagePage(ValueBuilderUpdateCallback<int?> updater) {
+  Widget _buildImagePage(ValueBuilderUpdateCallback<int?> updater) {
     return SizedBox(
       height: 150,
       child: PageView(
