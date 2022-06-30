@@ -1,7 +1,7 @@
 # Car Rental App
 
 ## Getting Started
-Car Rental basically is an app built with [FLUTTER](https://flutter.dev) framework with many features and clean code as well as clean architecture.
+Car Rental basically is an app built with [Flutter](https://flutter.dev) framework with many features and clean code as well as clean architecture.
 
 ## Mockups
 ![Mockup I](https://user-images.githubusercontent.com/52855540/155205766-b629dc08-ca25-4492-b22b-482b444bf988.jpg)
