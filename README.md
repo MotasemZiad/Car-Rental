@@ -29,7 +29,7 @@ Car Rental basically is an app built with [FLUTTER](https://flutter.dev) framewo
 - [bubble_bottom_bar](https://pub.dev/packages/bubble_bottom_bar): BubbleBottomBar is a Flutter widget designed by cubertodesign and developed by westdabestdb.
 - [google_fonts](https://pub.dev/packages/google_fonts): A package to include fonts from fonts.google.com in your Flutter app.
 - [intl](https://pub.dev/packages/intl): Contains code to deal with internationalized/localized messages, date and number formatting and parsing, bi-directional text, and other internationalization issues.
-- [line_icons](https://pub.dev/packages/line_icons): Another icon library, based on Awesome Line Icons (by www.icons8.com) and with the help of FlutterIcon.com.
+- [line_icons](https://pub.dev/packages/line_icons): Another icon library, based on Awesome Line Icons (by www.icons8.com) and with the help of fluttericon.com.
 - [step_progress_indicator](https://pub.dev/packages/step_progress_indicator): Bar indicator made of a series of selected and unselected steps.
 
 
