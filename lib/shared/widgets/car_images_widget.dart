@@ -49,7 +49,7 @@ class CarImagesWidget extends StatelessWidget {
         children: images
             .map(
               (e) => Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
                   child: Hero(
                     tag: images[0],
                     child: Image.asset(
